@@ -1,0 +1,190 @@
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy)                  Page 1
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+    .__.$$$.                                                    =  002710 L
+    .__.ABS.                                                    =  000000 G
+    .__.CPU.                                                    =  000000 L
+    .__.H$L.                                                    =  000000 L
+  0 _Animator                                                      003C09 GR
+    _BGP_REG                                                       ****** GX
+  0 _CheckPixlexCollision                                          0036E7 GR
+  0 _DeathAnimation                                                004DBB GR
+  0 _Dialogue                                                      004E82 GR
+  0 _GameLoop                                                      0035C4 GR
+  0 _GetGun                                                        003DB9 GR
+  1 _JUMP_FORCE                                                    000000 GR
+  0 _JumpFall                                                      003B59 GR
+  0 _KillerManager                                                 004B55 GR
+    _LCDC_REG                                                      ****** GX
+    _LYC_REG                                                       ****** GX
+  0 _MapController                                                 003623 GR
+  0 _MapEight                                                      0043CF GR
+  0 _MapEightStart                                                 004308 GR
+  0 _MapEleven                                                     0045FD GR
+  0 _MapElevenStart                                                0045BE GR
+  0 _MapFive                                                       0041C6 GR
+  0 _MapFiveStart                                                  004139 GR
+  0 _MapFour                                                       00410F GR
+  0 _MapFourStart                                                  0040D8 GR
+  0 _MapNine                                                       004485 GR
+  0 _MapNineStart                                                  004422 GR
+  0 _MapOne                                                        003E8E GR
+  0 _MapOneStart                                                   003E05 GR
+  0 _MapSeven                                                      0042E5 GR
+  0 _MapSevenStart                                                 004280 GR
+  0 _MapSix                                                        00426C GR
+  0 _MapSixStart                                                   004218 GR
+  0 _MapTen                                                        004567 GR
+  0 _MapTenStart                                                   0044EA GR
+  0 _MapThree                                                      004098 GR
+  0 _MapThreeStart                                                 003FE4 GR
+  0 _MapTwelve                                                     004701 GR
+  0 _MapTwelveStart                                                004684 GR
+  0 _MapTwo                                                        003FBF GR
+  0 _MapTwoStart                                                   003F33 GR
+  0 _MapZero                                                       003DD1 GR
+  0 _Movement                                                      0036B5 GR
+    _NR50_REG                                                      ****** GX
+    _NR51_REG                                                      ****** GX
+    _NR52_REG                                                      ****** GX
+  0 _P0                                                            002E50 R
+  0 _P1                                                            002F10 R
+  0 _P4                                                            002FD0 R
+  0 _P8                                                            003090 R
+  0 _PlayerCanMove                                                 0037B1 GR
+  0 _ResetGameBoy                                                  003697 GR
+    _SCX_REG                                                       ****** GX
+    _SCY_REG                                                       ****** GX
+    _STAT_REG                                                      ****** GX
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy)                  Page 2
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  0 _SetUp                                                         0034CE GR
+  0 _Shoot                                                         003D08 GR
+  0 _SnailCollision                                                004A1F GR
+  0 _SnailDraw                                                     001507 GR
+  0 _SnailManager                                                  0048F3 GR
+  0 _SnailMovement                                                 004901 GR
+  0 _SplashScreen                                                  00338C GR
+  0 _Toko                                                          00000F GR
+  0 _TokoUnarmed                                                   00014F GR
+  0 _Update                                                        003BBB GR
+  0 ___str_0                                                       00484F R
+    __modsint                                                      ****** GX
+    __moduint                                                      ****** GX
+  7 __xinit__bird                                                  000CA0 R
+  7 __xinit__button_click                                          000B38 R
+  7 __xinit__characters                                            000000 R
+  7 __xinit__fly                                                   000478 R
+  7 __xinit__guard_dialogue                                        000310 R
+  7 __xinit__guard_dialogue_greet                                  0009D0 R
+  7 __xinit__gunless_warning                                       0004D8 R
+  7 __xinit__map_tiles                                             000640 R
+    _add_LCD                                                       ****** GX
+  1 _backgroundoffset1x                                            000049 GR
+  1 _backgroundoffset1y                                            00004C GR
+  1 _backgroundoffset2x                                            00004A GR
+  1 _backgroundoffset2y                                            00004D GR
+  1 _backgroundoffset3x                                            00004B GR
+  1 _backgroundoffset3y                                            00004E GR
+  2 _bird                                                          000CA0 GR
+  0 _blankmap                                                      003376 GR
+  1 _boss_bat                                                      000020 GR
+  1 _bullet                                                        000024 GR
+  1 _bullet_enemy                                                  00002B GR
+  2 _button_click                                                  000B38 GR
+  2 _characters                                                    000000 GR
+  0 _coin                                                          001547 GR
+  1 _ducking                                                       000035 GR
+  0 _duty_instruments                                              003168 R
+  0 _explosion                                                     00170F GR
+  1 _explosion_sprite_index                                        000048 GR
+  0 _fadein                                                        0048B0 GR
+  0 _fadeout                                                       00486C GR
+  2 _fly                                                           000478 GR
+  1 _gold                                                          00001E GR
+  1 _gold_one_took                                                 000033 GR
+  1 _gold_two_took                                                 000034 GR
+  0 _guard                                                         0014D7 GR
+  2 _guard_dialogue                                                000310 GR
+  2 _guard_dialogue_greet                                          0009D0 GR
+  2 _gunless_warning                                               0004D8 GR
+    _hUGE_init                                                     ****** GX
+  1 _i                                                             000036 GR
+  1 _ii                                                            000037 GR
+  0 _interruptLCD                                                  004EB3 GR
+    _joypad                                                        ****** GX
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy)                  Page 3
+Hexadecimal [24-Bits]
+
+Symbol Table
+
+  1 _joypad_state                                                  000046 GR
+  1 _killer                                                        00000A GR
+  0 _killer_draw                                                   001517 GR
+  0 _king_dialogue                                                 0015A7 GR
+  0 _main                                                          000000 GR
+  0 _main_menu_song                                                003377 GR
+  1 _map_index                                                     000042 GR
+  2 _map_tiles                                                     000640 GR
+  0 _maps                                                          00028F GR
+  1 _mid_air                                                       00003A GR
+  1 _mid_air_frames                                                000039 GR
+  1 _moving_right                                                  00003D GR
+  0 _noise_instruments                                             00321C R
+  0 _order1                                                        003150 R
+  0 _order2                                                        003156 R
+  0 _order3                                                        00315C R
+  0 _order4                                                        003162 R
+  0 _order_cnt                                                     002E4F R
+  0 _parallax_background_data                                      00174F GR
+  0 _parallax_background_map                                       00231F GR
+  0 _performantdelay                                               0048E7 GR
+  1 _player                                                        000002 GR
+  1 _player_animation_state                                        00003B GR
+  1 _player_armed                                                  000032 GR
+  1 _player_shooting_animation_state                               00003C GR
+  1 _player_speed                                                  000001 GR
+  1 _prev_joypad_state                                             000047 GR
+    _printf                                                        ****** GX
+    _reset                                                         ****** GX
+    _set_bkg_data                                                  ****** GX
+    _set_bkg_tiles                                                 ****** GX
+    _set_interrupts                                                ****** GX
+    _set_sprite_data                                               ****** GX
+    _set_win_data                                                  ****** GX
+    _set_win_tiles                                                 ****** GX
+    _shadow_OAM                                                    ****** GX
+  1 _snail                                                         000014 GR
+  0 _splashcreen_data                                              00255F GR
+  0 _splashcreen_map                                               002C0F GR
+  1 _tile_index                                                    000040 GR
+    _wait_vbl_done                                                 ****** GX
+    _waitpad                                                       ****** GX
+    _waitpadup                                                     ****** GX
+  1 _walkable_tiles                                                000043 GR
+  0 _wave_instruments                                              0031C2 R
+  0 _waves                                                         003276 R
+  1 _x_tile                                                        00003E GR
+  1 _y_tile                                                        00003F GR
+
+
+ASxxxx Assembler V02.00 + NoICE + SDCC mods  (GameBoy)                  Page 4
+Hexadecimal [24-Bits]
+
+Area Table
+
+   0 _CODE                                      size   4EF3   flags    0
+   1 _DATA                                      size     4F   flags    0
+   2 _INITIALIZED                               size    CB0   flags    0
+   3 _DABS                                      size      0   flags    8
+   4 _HOME                                      size      0   flags    0
+   5 _GSINIT                                    size      0   flags    0
+   6 _GSFINAL                                   size      0   flags    0
+   7 _INITIALIZER                               size    CB0   flags    0
+   8 _CABS                                      size      0   flags    8
+

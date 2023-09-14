@@ -1,0 +1,1 @@
+c:\gbdk\bin\lcc -o Toko.gb -Wl-lHUGE/hUGEDriver.lib main.c
